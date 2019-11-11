@@ -1,12 +1,14 @@
 html,body,#root,.App{
   height: 100%;
   margin:0;
+  background-color: #282c34;
 }
 
 
 .App {
   text-align: center;
-  background-color: #282c34;
+  
+  color: white;
 }
 
 
@@ -15,14 +17,14 @@ html,body,#root,.App{
   display: flex;
   flex-wrap: nowrap;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
   justify-content: space-around;
   height: 10%;
   
 }
 .App-body{
   height: 90%;
-  background-color:rgb(51, 49, 49);
+  
 }
 .menu{
   width: 100%;
@@ -38,12 +40,11 @@ html,body,#root,.App{
   margin:2px;
 }
 .zoneChat{
-  background-color: red;
+  background-color:rgb(36, 35, 35);
   width: 300px;
   height: 500px;
 }
 .ListMSG{
-  background-color:aqua;
   height: 470px;
   overflow: auto;
   scroll-behavior: smooth;
