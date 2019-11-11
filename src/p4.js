@@ -37,7 +37,7 @@ var a = 0;
 class Case extends Component {
     constructor(props) {
         super(props);
-        this.socket = io('localhost:3001', { jsomp: false });
+        this.socket = io('sangi.ddns.net:3001', { jsomp: false });
         
         a++;
         this.state = {
@@ -46,7 +46,6 @@ class Case extends Component {
     }
 
     clicli() {
-        var b = this.state.case
         this.socket.emit('case', this.state.case)
         console.log("envoie case")
     }

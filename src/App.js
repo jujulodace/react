@@ -16,7 +16,7 @@ class App extends Component {
   }
   constructor(){
     super();
-    this.socket = io('localhost:3001',{jsomp:false});
+    this.socket = io('sangi.ddns.net:3001',{jsomp:false});
     this.socket.on('update',()=>this.setState({name: "Name"}));
   }
   render() {  
