@@ -18,6 +18,10 @@ io.on('connection', (socket) => {
         io.emit("case",click);
         console.log("oui"+click);
     })
+    socket.on("msg",(msg) => {
+        io.emit("msg",msg);
+        console.log("msg"+msg);
+    })
 });
 
 
