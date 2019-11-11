@@ -47,5 +47,6 @@ html,body,#root,.App{
   height: 470px;
   overflow: auto;
   scroll-behavior: smooth;
+
 }
 
