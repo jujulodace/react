@@ -10,13 +10,16 @@ const page1 =  <Bot/>
 const page2 = <P4/>
 const page3 = <h1>page3</h1>;
 //const page4 = <h1>page4</h1>;
+
+
+
 class App extends Component {
   state = {
     name : "bob"
   }
   constructor(){
     super();
-    this.socket = io('sangi.ddns.net:3001',{jsomp:false});
+    this.socket = io('localhost:3001',{jsomp:false});
     this.socket.on('update',()=>this.setState({name: "Name"}));
   }
   render() {  
@@ -40,6 +43,7 @@ class HelloWorld extends React.Component {
     }
   }
   changerPage(a) {
+   
     this.setState({
       page: a
     });

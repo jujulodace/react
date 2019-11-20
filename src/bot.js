@@ -47,6 +47,9 @@ class Chat extends Component {
             </div>
         )
     }
+    componentWillUnmount(){
+        console.log("suppression element");
+    }
 }
 
 export default Chat
